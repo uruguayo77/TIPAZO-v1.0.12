@@ -1,0 +1,34 @@
+{
+  "name": "Radar",
+  "short_name": "Radar",
+  "description": "Community-driven safety platform for real-time incident reporting and alerts",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#191E22",
+  "theme_color": "#191E22",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/app-icon.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/app-icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["safety", "social", "utilities"],
+  "screenshots": [
+    {
+      "src": "/app-icon.svg",
+      "sizes": "540x720",
+      "type": "image/svg+xml"
+    }
+  ]
+} 

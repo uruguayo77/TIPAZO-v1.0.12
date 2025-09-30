@@ -1,0 +1,30 @@
+{
+	"appId": "com.radar.safety.v2",
+	"appName": "Radar",
+	"webDir": "dist",
+	"server": {
+		"androidScheme": "https",
+		"cleartext": true
+	},
+	"android": {
+		"allowMixedContent": true,
+		"captureInput": true,
+		"webContentsDebuggingEnabled": true
+	},
+	"plugins": {
+		"SplashScreen": {
+			"launchShowDuration": 500,
+			"backgroundColor": "#191E22",
+			"showSpinner": true,
+			"spinnerStyle": "small",
+			"spinnerColor": "#ffffff"
+		},
+		"PushNotifications": {
+			"presentationOptions": [
+				"badge",
+				"sound",
+				"alert"
+			]
+		}
+	}
+}

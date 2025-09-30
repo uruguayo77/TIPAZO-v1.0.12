@@ -1,0 +1,403 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.radar.safety"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Permissions -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:41:5-67
+12-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:41:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:42:5-79
+13-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:42:22-76
+14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+14-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:43:5-76
+14-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:43:22-73
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:44:5-79
+15-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:44:22-76
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:45:5-81
+16-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:45:22-78
+17    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+17-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:46:5-85
+17-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:46:22-82
+18    <uses-permission android:name="android.permission.CAMERA" />
+18-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:47:5-65
+18-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:47:22-62
+19    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+19-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:48:5-80
+19-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:48:22-77
+20    <uses-permission
+20-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:49:5-108
+21        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+21-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:49:22-78
+22        android:maxSdkVersion="28" />
+22-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:49:79-105
+23    <uses-permission android:name="android.permission.WAKE_LOCK" />
+23-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:50:5-68
+23-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:50:22-65
+24    <uses-permission android:name="android.permission.VIBRATE" />
+24-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:51:5-66
+24-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:51:22-63
+25    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+25-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:52:5-81
+25-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:52:22-78
+26    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+26-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:53:5-77
+26-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:53:22-74
+27    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+27-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:54:5-86
+27-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:54:22-83
+28
+29    <!-- Push Notifications Permissions -->
+30    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+30-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:57:5-77
+30-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:57:22-74
+31    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+31-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:58:5-82
+31-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:58:22-79
+32    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+32-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:59:5-79
+32-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:59:22-76
+33    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+33-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:60:5-74
+33-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:60:22-71
+34
+35    <uses-feature android:name="android.hardware.location.gps" />
+35-->[:capacitor-community-background-geolocation] C:\Users\ASUS\Documents\RADAR\safety-alert-zone\node_modules\@capacitor-community\background-geolocation\android\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:21:5-66
+35-->[:capacitor-community-background-geolocation] C:\Users\ASUS\Documents\RADAR\safety-alert-zone\node_modules\@capacitor-community\background-geolocation\android\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:21:19-63
+36
+37    <queries>
+37-->[:capacitor-camera] C:\Users\ASUS\Documents\RADAR\safety-alert-zone\node_modules\@capacitor\camera\android\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:7:5-11:15
+38        <intent>
+38-->[:capacitor-camera] C:\Users\ASUS\Documents\RADAR\safety-alert-zone\node_modules\@capacitor\camera\android\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:8:9-10:18
+39            <action android:name="android.media.action.IMAGE_CAPTURE" />
+39-->[:capacitor-camera] C:\Users\ASUS\Documents\RADAR\safety-alert-zone\node_modules\@capacitor\camera\android\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:9:13-73
+39-->[:capacitor-camera] C:\Users\ASUS\Documents\RADAR\safety-alert-zone\node_modules\@capacitor\camera\android\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:9:21-70
+40        </intent>
+41    </queries>
+42
+43    <permission
+43-->[androidx.core:core:1.12.0] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\6c656d68da64f0795cfbc7de7b2adcd3\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+44        android:name="com.radar.safety.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+44-->[androidx.core:core:1.12.0] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\6c656d68da64f0795cfbc7de7b2adcd3\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+45        android:protectionLevel="signature" />
+45-->[androidx.core:core:1.12.0] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\6c656d68da64f0795cfbc7de7b2adcd3\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+46
+47    <uses-permission android:name="com.radar.safety.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+47-->[androidx.core:core:1.12.0] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\6c656d68da64f0795cfbc7de7b2adcd3\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+47-->[androidx.core:core:1.12.0] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\6c656d68da64f0795cfbc7de7b2adcd3\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+48
+49    <application
+49-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:4:5-38:19
+50        android:allowBackup="true"
+50-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:5:9-35
+51        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+51-->[androidx.core:core:1.12.0] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\6c656d68da64f0795cfbc7de7b2adcd3\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+52        android:extractNativeLibs="false"
+53        android:icon="@mipmap/ic_launcher"
+53-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:6:9-43
+54        android:label="@string/app_name"
+54-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:7:9-41
+55        android:networkSecurityConfig="@xml/network_security_config"
+55-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:12:9-69
+56        android:roundIcon="@mipmap/ic_launcher_round"
+56-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:8:9-54
+57        android:supportsRtl="true"
+57-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:9:9-35
+58        android:theme="@style/AppTheme"
+58-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:10:9-40
+59        android:usesCleartextTraffic="true" >
+59-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:11:9-44
+60        <activity
+60-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:14:9-27:20
+61            android:name="com.radar.safety.MainActivity"
+61-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:16:13-41
+62            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode|navigation"
+62-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:15:13-140
+63            android:exported="true"
+63-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:20:13-36
+64            android:label="@string/title_activity_main"
+64-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:17:13-56
+65            android:launchMode="singleTask"
+65-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:19:13-44
+66            android:theme="@style/AppTheme.NoActionBarLaunch" >
+66-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:18:13-62
+67            <intent-filter>
+67-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:22:13-25:29
+68                <action android:name="android.intent.action.MAIN" />
+68-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:23:17-69
+68-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:23:25-66
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+70-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:24:17-77
+70-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:24:27-74
+71            </intent-filter>
+72        </activity>
+73
+74        <provider
+75            android:name="androidx.core.content.FileProvider"
+75-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:30:13-62
+76            android:authorities="com.radar.safety.fileprovider"
+76-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:31:13-64
+77            android:exported="false"
+77-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:32:13-37
+78            android:grantUriPermissions="true" >
+78-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:33:13-47
+79            <meta-data
+79-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:34:13-36:64
+80                android:name="android.support.FILE_PROVIDER_PATHS"
+80-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:35:17-67
+81                android:resource="@xml/file_paths" />
+81-->C:\Users\ASUS\Documents\RADAR\safety-alert-zone\android\app\src\main\AndroidManifest.xml:36:17-51
+82        </provider>
+83
+84        <service
+84-->[:capacitor-community-background-geolocation] C:\Users\ASUS\Documents\RADAR\safety-alert-zone\node_modules\@capacitor-community\background-geolocation\android\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:24:9-28:56
+85            android:name="com.equimaps.capacitor_background_geolocation.BackgroundGeolocationService"
+85-->[:capacitor-community-background-geolocation] C:\Users\ASUS\Documents\RADAR\safety-alert-zone\node_modules\@capacitor-community\background-geolocation\android\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:25:13-102
+86            android:enabled="true"
+86-->[:capacitor-community-background-geolocation] C:\Users\ASUS\Documents\RADAR\safety-alert-zone\node_modules\@capacitor-community\background-geolocation\android\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:26:13-35
+87            android:exported="true"
+87-->[:capacitor-community-background-geolocation] C:\Users\ASUS\Documents\RADAR\safety-alert-zone\node_modules\@capacitor-community\background-geolocation\android\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:27:13-36
+88            android:foregroundServiceType="location" />
+88-->[:capacitor-community-background-geolocation] C:\Users\ASUS\Documents\RADAR\safety-alert-zone\node_modules\@capacitor-community\background-geolocation\android\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:28:13-53
+89        <service
+89-->[:capacitor-push-notifications] C:\Users\ASUS\Documents\RADAR\safety-alert-zone\node_modules\@capacitor\push-notifications\android\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:8:9-14:19
+90            android:name="com.capacitorjs.plugins.pushnotifications.MessagingService"
+90-->[:capacitor-push-notifications] C:\Users\ASUS\Documents\RADAR\safety-alert-zone\node_modules\@capacitor\push-notifications\android\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:9:13-86
+91            android:exported="false" >
+91-->[:capacitor-push-notifications] C:\Users\ASUS\Documents\RADAR\safety-alert-zone\node_modules\@capacitor\push-notifications\android\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:10:13-37
+92            <intent-filter>
+92-->[:capacitor-push-notifications] C:\Users\ASUS\Documents\RADAR\safety-alert-zone\node_modules\@capacitor\push-notifications\android\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:11:13-13:29
+93                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+93-->[:capacitor-push-notifications] C:\Users\ASUS\Documents\RADAR\safety-alert-zone\node_modules\@capacitor\push-notifications\android\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:12:17-78
+93-->[:capacitor-push-notifications] C:\Users\ASUS\Documents\RADAR\safety-alert-zone\node_modules\@capacitor\push-notifications\android\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:12:25-75
+94            </intent-filter>
+95        </service>
+96
+97        <receiver
+97-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\1a7ad2436fc253ea7604e4a9949d0b8b\transformed\firebase-messaging-23.3.1\AndroidManifest.xml:29:9-40:20
+98            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+98-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\1a7ad2436fc253ea7604e4a9949d0b8b\transformed\firebase-messaging-23.3.1\AndroidManifest.xml:30:13-78
+99            android:exported="true"
+99-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\1a7ad2436fc253ea7604e4a9949d0b8b\transformed\firebase-messaging-23.3.1\AndroidManifest.xml:31:13-36
+100            android:permission="com.google.android.c2dm.permission.SEND" >
+100-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\1a7ad2436fc253ea7604e4a9949d0b8b\transformed\firebase-messaging-23.3.1\AndroidManifest.xml:32:13-73
+101            <intent-filter>
+101-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\1a7ad2436fc253ea7604e4a9949d0b8b\transformed\firebase-messaging-23.3.1\AndroidManifest.xml:33:13-35:29
+102                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+102-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\1a7ad2436fc253ea7604e4a9949d0b8b\transformed\firebase-messaging-23.3.1\AndroidManifest.xml:34:17-81
+102-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\1a7ad2436fc253ea7604e4a9949d0b8b\transformed\firebase-messaging-23.3.1\AndroidManifest.xml:34:25-78
+103            </intent-filter>
+104
+105            <meta-data
+105-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\1a7ad2436fc253ea7604e4a9949d0b8b\transformed\firebase-messaging-23.3.1\AndroidManifest.xml:37:13-39:40
+106                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+106-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\1a7ad2436fc253ea7604e4a9949d0b8b\transformed\firebase-messaging-23.3.1\AndroidManifest.xml:38:17-92
+107                android:value="true" />
+107-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\1a7ad2436fc253ea7604e4a9949d0b8b\transformed\firebase-messaging-23.3.1\AndroidManifest.xml:39:17-37
+108        </receiver>
+109        <!--
+110             FirebaseMessagingService performs security checks at runtime,
+111             but set to not exported to explicitly avoid allowing another app to call it.
+112        -->
+113        <service
+113-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\1a7ad2436fc253ea7604e4a9949d0b8b\transformed\firebase-messaging-23.3.1\AndroidManifest.xml:46:9-53:19
+114            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+114-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\1a7ad2436fc253ea7604e4a9949d0b8b\transformed\firebase-messaging-23.3.1\AndroidManifest.xml:47:13-82
+115            android:directBootAware="true"
+115-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\1a7ad2436fc253ea7604e4a9949d0b8b\transformed\firebase-messaging-23.3.1\AndroidManifest.xml:48:13-43
+116            android:exported="false" >
+116-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\1a7ad2436fc253ea7604e4a9949d0b8b\transformed\firebase-messaging-23.3.1\AndroidManifest.xml:49:13-37
+117            <intent-filter android:priority="-500" >
+117-->[:capacitor-push-notifications] C:\Users\ASUS\Documents\RADAR\safety-alert-zone\node_modules\@capacitor\push-notifications\android\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:11:13-13:29
+118                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+118-->[:capacitor-push-notifications] C:\Users\ASUS\Documents\RADAR\safety-alert-zone\node_modules\@capacitor\push-notifications\android\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:12:17-78
+118-->[:capacitor-push-notifications] C:\Users\ASUS\Documents\RADAR\safety-alert-zone\node_modules\@capacitor\push-notifications\android\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:12:25-75
+119            </intent-filter>
+120        </service>
+121        <service
+121-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\1a7ad2436fc253ea7604e4a9949d0b8b\transformed\firebase-messaging-23.3.1\AndroidManifest.xml:54:9-63:19
+122            android:name="com.google.firebase.components.ComponentDiscoveryService"
+122-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\1a7ad2436fc253ea7604e4a9949d0b8b\transformed\firebase-messaging-23.3.1\AndroidManifest.xml:55:13-84
+123            android:directBootAware="true"
+123-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\3b478ad124c413908fdde6b88f419ab8\transformed\firebase-common-20.4.2\AndroidManifest.xml:32:13-43
+124            android:exported="false" >
+124-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\1a7ad2436fc253ea7604e4a9949d0b8b\transformed\firebase-messaging-23.3.1\AndroidManifest.xml:56:13-37
+125            <meta-data
+125-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\1a7ad2436fc253ea7604e4a9949d0b8b\transformed\firebase-messaging-23.3.1\AndroidManifest.xml:57:13-59:85
+126                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+126-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\1a7ad2436fc253ea7604e4a9949d0b8b\transformed\firebase-messaging-23.3.1\AndroidManifest.xml:58:17-122
+127                android:value="com.google.firebase.components.ComponentRegistrar" />
+127-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\1a7ad2436fc253ea7604e4a9949d0b8b\transformed\firebase-messaging-23.3.1\AndroidManifest.xml:59:17-82
+128            <meta-data
+128-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\1a7ad2436fc253ea7604e4a9949d0b8b\transformed\firebase-messaging-23.3.1\AndroidManifest.xml:60:13-62:85
+129                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+129-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\1a7ad2436fc253ea7604e4a9949d0b8b\transformed\firebase-messaging-23.3.1\AndroidManifest.xml:61:17-119
+130                android:value="com.google.firebase.components.ComponentRegistrar" />
+130-->[com.google.firebase:firebase-messaging:23.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\1a7ad2436fc253ea7604e4a9949d0b8b\transformed\firebase-messaging-23.3.1\AndroidManifest.xml:62:17-82
+131            <meta-data
+131-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\e750fba05726f2c6cb0c5c6c5524275c\transformed\firebase-installations-17.2.0\AndroidManifest.xml:15:13-17:85
+132                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+132-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\e750fba05726f2c6cb0c5c6c5524275c\transformed\firebase-installations-17.2.0\AndroidManifest.xml:16:17-130
+133                android:value="com.google.firebase.components.ComponentRegistrar" />
+133-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\e750fba05726f2c6cb0c5c6c5524275c\transformed\firebase-installations-17.2.0\AndroidManifest.xml:17:17-82
+134            <meta-data
+134-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\e750fba05726f2c6cb0c5c6c5524275c\transformed\firebase-installations-17.2.0\AndroidManifest.xml:18:13-20:85
+135                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+135-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\e750fba05726f2c6cb0c5c6c5524275c\transformed\firebase-installations-17.2.0\AndroidManifest.xml:19:17-127
+136                android:value="com.google.firebase.components.ComponentRegistrar" />
+136-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\e750fba05726f2c6cb0c5c6c5524275c\transformed\firebase-installations-17.2.0\AndroidManifest.xml:20:17-82
+137            <meta-data
+137-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\9474002541ff2ed491872eb237c89587\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:12:13-14:85
+138                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+138-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\9474002541ff2ed491872eb237c89587\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:13:17-116
+139                android:value="com.google.firebase.components.ComponentRegistrar" />
+139-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\9474002541ff2ed491872eb237c89587\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:14:17-82
+140            <meta-data
+140-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\3b478ad124c413908fdde6b88f419ab8\transformed\firebase-common-20.4.2\AndroidManifest.xml:35:13-37:85
+141                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+141-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\3b478ad124c413908fdde6b88f419ab8\transformed\firebase-common-20.4.2\AndroidManifest.xml:36:17-109
+142                android:value="com.google.firebase.components.ComponentRegistrar" />
+142-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\3b478ad124c413908fdde6b88f419ab8\transformed\firebase-common-20.4.2\AndroidManifest.xml:37:17-82
+143            <meta-data
+143-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\3af093881168aaefd29d99a4de672503\transformed\firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
+144                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+144-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\3af093881168aaefd29d99a4de672503\transformed\firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
+145                android:value="com.google.firebase.components.ComponentRegistrar" />
+145-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\3af093881168aaefd29d99a4de672503\transformed\firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
+146        </service>
+147
+148        <activity
+148-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\bfdf49905fa6056c43d56db4ef02f443\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+149            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+149-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\bfdf49905fa6056c43d56db4ef02f443\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+150            android:exported="false"
+150-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\bfdf49905fa6056c43d56db4ef02f443\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+151            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+151-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\bfdf49905fa6056c43d56db4ef02f443\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+152
+153        <provider
+153-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\3b478ad124c413908fdde6b88f419ab8\transformed\firebase-common-20.4.2\AndroidManifest.xml:23:9-28:39
+154            android:name="com.google.firebase.provider.FirebaseInitProvider"
+154-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\3b478ad124c413908fdde6b88f419ab8\transformed\firebase-common-20.4.2\AndroidManifest.xml:24:13-77
+155            android:authorities="com.radar.safety.firebaseinitprovider"
+155-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\3b478ad124c413908fdde6b88f419ab8\transformed\firebase-common-20.4.2\AndroidManifest.xml:25:13-72
+156            android:directBootAware="true"
+156-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\3b478ad124c413908fdde6b88f419ab8\transformed\firebase-common-20.4.2\AndroidManifest.xml:26:13-43
+157            android:exported="false"
+157-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\3b478ad124c413908fdde6b88f419ab8\transformed\firebase-common-20.4.2\AndroidManifest.xml:27:13-37
+158            android:initOrder="100" />
+158-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\3b478ad124c413908fdde6b88f419ab8\transformed\firebase-common-20.4.2\AndroidManifest.xml:28:13-36
+159        <provider
+159-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\a87bf043274614f86814900ef4ddf1d0\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+160            android:name="androidx.startup.InitializationProvider"
+160-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\a87bf043274614f86814900ef4ddf1d0\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+161            android:authorities="com.radar.safety.androidx-startup"
+161-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\a87bf043274614f86814900ef4ddf1d0\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+162            android:exported="false" >
+162-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\a87bf043274614f86814900ef4ddf1d0\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+163            <meta-data
+163-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\a87bf043274614f86814900ef4ddf1d0\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+164                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+164-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\a87bf043274614f86814900ef4ddf1d0\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+165                android:value="androidx.startup" />
+165-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\a87bf043274614f86814900ef4ddf1d0\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+166            <meta-data
+166-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\3923c4a35271eb5be906c9dd7a47ec8b\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+167                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+167-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\3923c4a35271eb5be906c9dd7a47ec8b\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+168                android:value="androidx.startup" />
+168-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\3923c4a35271eb5be906c9dd7a47ec8b\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+169            <meta-data
+169-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\aef6dd0653ee5852ea657539d9688a92\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+170                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+170-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\aef6dd0653ee5852ea657539d9688a92\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+171                android:value="androidx.startup" />
+171-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\aef6dd0653ee5852ea657539d9688a92\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+172        </provider>
+173
+174        <meta-data
+174-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\d03e0716f62f6606ab889d1fe3af39d9\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+175            android:name="com.google.android.gms.version"
+175-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\d03e0716f62f6606ab889d1fe3af39d9\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+176            android:value="@integer/google_play_services_version" />
+176-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\d03e0716f62f6606ab889d1fe3af39d9\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+177
+178        <receiver
+178-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\aef6dd0653ee5852ea657539d9688a92\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+179            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+179-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\aef6dd0653ee5852ea657539d9688a92\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+180            android:directBootAware="false"
+180-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\aef6dd0653ee5852ea657539d9688a92\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+181            android:enabled="true"
+181-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\aef6dd0653ee5852ea657539d9688a92\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+182            android:exported="true"
+182-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\aef6dd0653ee5852ea657539d9688a92\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+183            android:permission="android.permission.DUMP" >
+183-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\aef6dd0653ee5852ea657539d9688a92\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+184            <intent-filter>
+184-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\aef6dd0653ee5852ea657539d9688a92\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+185                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+185-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\aef6dd0653ee5852ea657539d9688a92\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+185-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\aef6dd0653ee5852ea657539d9688a92\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+186            </intent-filter>
+187            <intent-filter>
+187-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\aef6dd0653ee5852ea657539d9688a92\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+188                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+188-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\aef6dd0653ee5852ea657539d9688a92\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+188-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\aef6dd0653ee5852ea657539d9688a92\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+189            </intent-filter>
+190            <intent-filter>
+190-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\aef6dd0653ee5852ea657539d9688a92\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+191                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+191-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\aef6dd0653ee5852ea657539d9688a92\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+191-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\aef6dd0653ee5852ea657539d9688a92\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+192            </intent-filter>
+193            <intent-filter>
+193-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\aef6dd0653ee5852ea657539d9688a92\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+194                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+194-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\aef6dd0653ee5852ea657539d9688a92\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+194-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\aef6dd0653ee5852ea657539d9688a92\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+195            </intent-filter>
+196        </receiver>
+197
+198        <service
+198-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\d2aa8e999889ece47853c9214fd1ac45\transformed\transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+199            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+199-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\d2aa8e999889ece47853c9214fd1ac45\transformed\transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+200            android:exported="false" >
+200-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\d2aa8e999889ece47853c9214fd1ac45\transformed\transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+201            <meta-data
+201-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\d2aa8e999889ece47853c9214fd1ac45\transformed\transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+202                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+202-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\d2aa8e999889ece47853c9214fd1ac45\transformed\transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+203                android:value="cct" />
+203-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\d2aa8e999889ece47853c9214fd1ac45\transformed\transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+204        </service>
+205        <service
+205-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\5b8947e38dc5026273503ea5b702750a\transformed\transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+206            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+206-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\5b8947e38dc5026273503ea5b702750a\transformed\transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+207            android:exported="false"
+207-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\5b8947e38dc5026273503ea5b702750a\transformed\transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+208            android:permission="android.permission.BIND_JOB_SERVICE" >
+208-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\5b8947e38dc5026273503ea5b702750a\transformed\transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+209        </service>
+210
+211        <receiver
+211-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\5b8947e38dc5026273503ea5b702750a\transformed\transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+212            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+212-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\5b8947e38dc5026273503ea5b702750a\transformed\transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+213            android:exported="false" />
+213-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\ASUS\.gradle\caches\8.11.1\transforms\5b8947e38dc5026273503ea5b702750a\transformed\transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+214    </application>
+215
+216</manifest>
